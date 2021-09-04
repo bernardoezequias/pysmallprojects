@@ -5,7 +5,7 @@ guess = int(input("Escolha um número de 0 a 15: "))
 
 while True:
     if (guess == random_number):
-        print("Acertou!")
+        print("\033[0;32mAcertou!")
         break
     elif (guess < random_number):
         print("Seu palpite é menor que o número gerado")
