@@ -14,8 +14,7 @@ while True:
     page = requests.get(f"https://www.google.com/search?client=firefox-b-d&q={acao}", headers=header)
     soup = BeautifulSoup(page.content,'html.parser')
 
-    atributos = {'class':'g'}
     cotacao = soup.find_all("span", class_="IsqQVc NprOob XcVN5d wT3VGc")[0]
-    print(f"Cotação da {acao} hoje: {cotacao_dolar.text}")
+    print(f"Cotação da {acao} hoje: {cotacao.text}")
 
 
