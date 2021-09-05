@@ -17,7 +17,7 @@ while True:
     soup = BeautifulSoup(page.content,'html.parser')
 
     atributos = {'class':'g'}
-    cotacao_dolar = soup.find_all("span", class_="IsqQVc NprOob XcVN5d wT3VGc")[0]
+    cotacao = soup.find_all("span", class_="IsqQVc NprOob XcVN5d wT3VGc")[0]
     print(f"Cotação da {acao} hoje: {cotacao_dolar.text}")
 
 
